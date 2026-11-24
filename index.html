@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>牧安云 · 五端一云演示</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:"Microsoft YaHei",-apple-system,sans-serif;background:radial-gradient(circle at 20% 0%,#17573c 0%,#0b2c1f 55%,#071a12 100%);color:#eaf5ef;min-height:100vh;padding:40px 20px 60px}
+  .wrap{max-width:1060px;margin:0 auto}
+  .head{text-align:center;margin-bottom:34px}
+  .logo{width:76px;height:76px;border-radius:20px;background:linear-gradient(135deg,#2fae74,#1c7d52);color:#fff;font-size:42px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;box-shadow:0 10px 30px rgba(47,174,116,.35)}
+  h1{font-size:30px;letter-spacing:3px;font-weight:700}
+  .sub{color:#9fd1b6;font-size:14px;margin-top:8px;letter-spacing:1px}
+  .badges{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:16px}
+  .badge{padding:5px 14px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16);font-size:12.5px;color:#c9e7d7}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;margin-bottom:26px}
+  .card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:22px;text-decoration:none;color:inherit;transition:.18s;display:flex;flex-direction:column}
+  .card:hover{transform:translateY(-4px);background:rgba(255,255,255,.12);border-color:rgba(127,216,168,.5)}
+  .card .ico{font-size:26px;margin-bottom:10px}
+  .card h2{font-size:17px;margin-bottom:8px}
+  .card p{font-size:13px;line-height:1.8;color:#b3d6c2;flex:1}
+  .card .go{margin-top:14px;font-size:12.5px;color:#7fd8a8;font-weight:600}
+  .script{background:rgba(0,0,0,.28);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:22px 26px;line-height:2.1;font-size:13.5px;color:#cfe9da}
+  .script h3{font-size:15px;color:#fff;margin-bottom:10px}
+  .script b{color:#7fd8a8}
+  .foot{text-align:center;color:#6a9a82;font-size:12px;margin-top:26px;line-height:1.9}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="head">
+    <div class="logo">牧</div>
+    <h1>牧安云</h1>
+    <div class="sub">畜禽疫病 AI 哨兵与防疫监管一体化平台 · 五端一云</div>
+    <div class="badges">
+      <span class="badge">AI 初筛</span>
+      <span class="badge">五联单闭环</span>
+      <span class="badge">风险四级分色</span>
+      <span class="badge">Bmob 云同步</span>
+      <span class="badge">v2.3.0</span>
+    </div>
+  </div>
+
+  <div class="grid">
+    <a class="card" href="MuAnCloud-Web-2.3.0.html">
+      <div class="ico">🖥️</div>
+      <h2>五端业务系统</h2>
+      <p>养殖户 AI 上报 · 兽医抢单复核 · 监管一场一档 · 无害化收运五联单闭环，四个角色一键切换。</p>
+      <div class="go">进入系统 →</div>
+    </a>
+    <a class="card" href="MuAnCloud-Screen-2.3.0.html">
+      <div class="ico">📊</div>
+      <h2>县域指挥大屏</h2>
+      <p>存栏、免疫、上报、预警、联单闭环实时指标，风险红橙黄蓝四级分色，事件流滚动。建议 F11 全屏。</p>
+      <div class="go">打开大屏 →</div>
+    </a>
+    <a class="card" href="MuAnCloud-Android-2.3.0.apk">
+      <div class="ico">📱</div>
+      <h2>安卓客户端</h2>
+      <p>APK 安装包，适配手机竖屏。安装时需允许「安装未知来源应用」，适合现场巡检使用。</p>
+      <div class="go">下载 APK →</div>
+    </a>
+  </div>
+
+  <div class="script">
+    <h3>演示脚本（约 5 分钟）</h3>
+    <b>1</b> 进入系统，介绍四个业务角色 + 县域大屏 = 五端一云<br>
+    <b>2</b> 养殖户端：填「皮肤发紫、咳嗽喘气」→ 开始 AI 初筛 → 得到疑似病种与处置建议<br>
+    <b>3</b> 兽医专家端：工单池抢单 → 复核 → 出具结论<br>
+    <b>4</b> 养殖户端：死亡申报 → 生成五联单①<br>
+    <b>5</b> 无害化收运端：接单 → 到场打卡 → 处置 → 过磅 → 凭证归档 → 闭环<br>
+    <b>6</b> 监管端：风险四级分色 + 一场一档 + 五联单台账<br>
+    <b>7</b> 打开大屏，F11 全屏，汇总指标收尾
+  </div>
+
+  <div class="foot">
+    数据存储：Bmob 云（api.bmobcloud.com）· 断网自动降级为本地演示数据<br>
+    牧安云 · 人工智能通识课程作业演示站
+  </div>
+</div>
+</body>
+</html>
